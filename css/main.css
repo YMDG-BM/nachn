@@ -19,6 +19,9 @@ body {font-family: pf;}
     font-size: .8em;
     line-height: 22px !important;
     }
+    iframe{
+        width:20vw;
+      }
     dropdown{
     display: inline-block;
     margin: 20px 0; 
@@ -354,6 +357,9 @@ body {font-family: pf;}
         
         
         transition:border-radius 0.2s, background 0.2s;
+      }
+      iframe{
+        width:100vw;
       }
       .bbutton:hover {
         
