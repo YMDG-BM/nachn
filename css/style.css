@@ -1,3 +1,6 @@
+body{
+  margin:0;
+}
 @media (max-height:550px) {
   .bg{
     margin-top: 5vh;
@@ -296,3 +299,67 @@ button:active {
   transition: all 0.2s;
 }
 }
+
+#topbar{
+  width: 100vw;
+  height: 60px;
+  background: rgba(95, 158, 160, 0.815);
+  color:rgb(216, 216, 216);
+  font-size: 24px;
+}
+#topbutton{
+  float:right;
+}
+.nonmain{
+  border:none;
+  width:150px;
+  height: 60px;
+  right: 10px;
+  font-size: 18px;
+  background-color: rgba(83, 83, 83, 0);
+  position: relative;
+  border-radius: 0px;
+  color: rgba(240, 240, 240,1);
+  position:relative;
+  transition: all 0.2s;
+}
+.nonmain:hover {
+  border-radius: 15px;
+  color: rgba(20, 20, 20,1);
+  background:rgba(222, 222, 222, 0.644);  
+  border: none;
+  }
+.nonmain:active {
+  border-radius: 20px;
+  color: rgba(20, 20, 20,1);
+  background:rgba(241, 241, 241, 0.767);  
+  border: none;
+}
+.main{
+position: relative;
+width: 80vw;
+left: 10vw;
+top:70px;
+border-radius: 10px;
+background-color: rgba(173, 216, 210, 0.904);
+box-shadow:  5px 5px 10px #829998,
+             -5px 5px 10px #829998;
+}
+
+.text{
+  position:relative;
+  top:15px;
+  left:1vw;
+  width: 78vw;
+  font-size:20px;
+  word-wrap:break-word;
+  text-indent:40px;  
+      color:#606C71;
+  }
+  .subbt {
+    position:relative;
+    left:10px;
+    top:15px;
+    font-size:30px;
+    color:#23756e
+    }
