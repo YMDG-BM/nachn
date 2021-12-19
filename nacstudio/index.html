@@ -4,119 +4,185 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<title>NAC博客 | 夜猫工坊</title>
-	<link rel="stylesheet" href="https://nachn.gitee.io/css/main.css" media="screen" type="text/css">
-	<link rel="Shortcut Icon" href="https://nachn.gitee.io/ico/title.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://nachn.gitee.io/css/iconfont.css">
+	<title>NAC博客 | NAC Studio</title>
+	<link rel="stylesheet" href="../css/style.css" media="screen" type="text/css">
+	<link rel="Shortcut Icon" href="../ico/title.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../icon/iconfont.css">
 
 	<style type="" css="">
 		::-webkit-scrollbar {/*滚动条整体样式*/ width: 10px; /*高宽分别对应横竖滚动条的尺寸*/ height: 1px; } ::-webkit-scrollbar-thumb {/*滚动条里面小方块*/ border-radius:
 		10px; background: #535353; } ::-webkit-scrollbar-track {/*滚动条里面轨道*/ border-radius: 0px; background: #64646400; }
+		*{
+              margin: 0;
+              padding: 0;
+          }
+		  html,body{
+              width: 100%;
+              height: 100%;
+          }
+		  .bt{
+  position: relative;
+  font-size: 32px;
+  font-weight: bolder;
+  top:10px;
+  color: rgb(128, 151, 165);
+}
+		  @media (max-width:755px) {
+			  h4{
+				  display: none;
+			  }
+			  .nonmain{
+				  width: 40px;
+			  }
+			  .bt{
+  position: relative;
+  font-size: 32px;
+  font-weight: bolder;
+  top:10px;
+  color: rgb(128, 151, 165);
+}
+			  @media (min-width:756px) {
+				.bt{
+  position: relative;
+  font-size: 32px;
+  font-weight: bolder;
+  top:10px;
+  color: rgb(128, 151, 165);
+}
+			  }
+
+		  }
 
 	</style>
 	<script>
 		var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?cb9c0b40192b67a76678130fae476cac";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?cb9c0b40192b67a76678130fae476cac";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+		var bodyBgs = []
+		bodyBgs[0] = "../photo/\\(1\\).jpg"
+		bodyBgs[1] = "../photo/\\(2\\).jpg"
+		bodyBgs[2] = "../photo/\\(3\\).jpg"
+		bodyBgs[3] = "../photo/\\(4\\).jpg"
+		bodyBgs[4] = "../photo/\\(5\\).jpg"
+		bodyBgs[5] = "../photo/\\(6\\).jpg"
+		bodyBgs[6] = "../photo/\\(7\\).jpg"
+		bodyBgs[7] = "../photo/\\(8\\).jpg"
+		bodyBgs[8] = "../photo/\\(9\\).jpg"
+		bodyBgs[9] = "../photo/\\(10\\).jpg"
+		bodyBgs[10] = "../photo/\\(11\\).jpg"
+		bodyBgs[11] = "../photo/\\(12\\).jpg"
+		bodyBgs[12] = "../photo/\\(13\\).jpg"
+		bodyBgs[13] = "../photo/\\(14\\).jpg"
+		bodyBgs[14] = "../photo/\\(15\\).jpg"
+		bodyBgs[15] = "../photo/\\(16\\).jpg"
+		bodyBgs[16] = "../photo/\\(17\\).jpg"
+		bodyBgs[17] = "../photo/\\(18\\).jpg"
+		bodyBgs[18] = "../photo/\\(19\\).jpg"
+		bodyBgs[19] = "../photo/\\(20\\).jpg"
 
+		var randomBgIndex = Math.round(Math.random() * 19);
+		document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ');\
+width:100%;\
+height:100%;\
+background-size:cover;\
+background-attachment:fixed;\
+background-position:center 25%;\}</style>')
 	</script>
 
 </head>
 
+
 <body>
-	<div id="grad1">
-		<h1 style="text-align:center ">夜猫工坊博客</h1>
+	<div id="topbar">
+		<h3 style="margin:0;position:relative;top: 10px;margin-left:20px;float:left">夜猫工坊</h1>
+			<div id="topbutton">
+				<button class="animation nonmain" style="" onclick="window.location.assign('../support');"><span class="animation iconfont icon-icon"
+					style="font-size: 18px;"></span>
+					<h4>赞助支持</h4>
+				</button>
+				<button class="animation nonmain" style="" onclick="window.location.assign('../updates');"><span
+						class="animation iconfont icon-banbenxinxi" style="font-size: 18px;"></span>
+					<h4>更新</h4>
+				</button>
+				<button class="animation nonmain" style="" onclick="window.location.assign('../articles');"><span
+						class="animation iconfont icon-xinwenzixun-xianxing" style="font-size: 18px;"></span>
+					<h4>一些文章</h4>
+				</button>
+				<button class="animation nonmain" style="" onclick="window.location.assign('../');"><span
+						class="animation iconfont icon-bilibili-line" style="font-size: 18px;"></span>
+					<h4>主页</h4>
+				</button>
+			</div>
 	</div>
-	<div>
-		<div class="animate sidebar">
-			<dropdown style="height: auto; transition:all .3s;">
-				<input id="toggle1" type="checkbox" checked="" disabled="true">
-				<label for="toggle1" class="animate" style="height: 50px; transition:all .3s;width:calc(100vw-84px);"><br><span class="iconfont icon-bokexinwen" style="float:left;">&ensp;夜猫工坊博客</span></label>
-				<ul class="animate">
-					<li class="animate" style="height: 30px; transition:all .3s;width:calc(100vw-84px);" onclick="window.location.assign('https://space.bilibili.com/296484714');">
-						<span class="iconfont icon-bilibili-fill" style="float:left;">&ensp;BiliBili账号</span>
-						
-					</li>
-					
-					<li class="animate" style="height: 30px; transition:all .3s;width:calc(100vw-84px);" onclick="window.location.assign('https://nachn.gitee.io/articles');">
-						<span class="iconfont icon-xieboke" style="float:left;">&ensp;文章</span>
-					</li>
-					<li class="animate" style="height: 30px; transition:all .3s;width:calc(100vw-84px);" onclick="window.location.assign('https://nachn.gitee.io/');">
-						<span class="iconfont icon-github1" style="float:left;">&ensp;夜猫博客</span>
-					</li>
-					<li class="animate" style="height: 30px; transition:all .3s;width:calc(100vw-84px);" onclick="window.location.assign('https://nachn.gitee.io/updates');">
-						<span class="iconfont icon-ziyuan" style="float:left;">&ensp;更新记录
-					</span></li>
-					
-					<li class="animate" style="height: 30px; transition:all .3s;width:calc(100vw-84px);" onclick="window.location.assign('https://nachn.gitee.io/support');">
-						<span class="iconfont icon-ziyuan" style="float:left;">&ensp;赞助与支持
-					</span></li>
-				</ul>
-			</dropdown>
-			<button class="button" style="position:relative;top:5px;left:0;width:80px; " onclick="window.location.assign('https://qm.qq.com/cgi-bin/qm/qr?k=_CmiufZkVNm9TJOuRiwm0IsV2MFFm8O5&amp;noverify=0')">反馈</button>
-			<button class="bbutton" style="" onclick="window.location.assign('https://qm.qq.com/cgi-bin/qm/qr?k=ECQtujv6S8rFiZw9CGjL8vwuqOMe58aw&amp;authKey=+fjiVc1hQIWcKgotK/SfsAdF+sn5fLTebVerT0hDrI8gHDRpNikH55srfbxpkx5+')">
-				搅基qq群
-			</button>
-		</div>
-		<div class="main">
-			<!--bt标题 subbt副标题 text文字-->
-			<p class="bt">夜猫工坊</p>
-			<p class="space">&#8194;</p>
-			
-			<p class="bt">公告</p>
-			<p class="subbt" style="display:none">KB210401 - 2021/04/03 新平台入驻公告</p>
-			<p class="text" style="display:none">各位NACer们，我们近日入驻了新平台，名为爱发电。爱发电是一个连接创作者与粉丝的会员制按月赞助平台，因此意味着如果各位NACer们想要给我们赞助的话可以到这个平台上了。当然B站的充电仍然可用。</p>
-			<p class="text" style="display:none">在爱发电上，我们会针对付费粉丝们特别推送内容，免费内容与其他平台相同。不论各位NACer们赞助多少，都会出现在我们的赞助名单上。</p>
-			<p class="text" style="display:none">付费方案有以下三种：<br>一、￥6.00/月，这可以让您1.在以后的新视频中会将您的ID加入赞助名单；2.提前1日看到新视频<br>二、￥20.00/月，这可以让您1.在以后的新视频中将您的ID加入赞助名单并加大字号；2.可以提前7-1日看到新视频<br>三、￥50.00/月，这可以让您1.在以后的新视频中将您的ID加入赞助名单，并且在视频开头特标注您的ID；2.所有素材免费获取；3.可以提前7-1日看到新视频；4.可以直接参与我们的创作，有效期1月。<br>四、任意金额打赏。这个方案没有任何特殊效果，请谨慎选择。</p>
-			<p class="text" style="display:none">希望各位NACer们可以为我们打赏让我们更有动力！</p>
-			<p class="subbt">KB210301 - 2021/03/14 暂停更新公告</p>
-			<p class="text">各位NACer们，由于中考迫在眉睫，我们不得不暂停更新，对此我们感到非常抱歉。</p>
-			<p class="text">待到我们归来之时，便是好活呈上之日！2021中考，祝我们成功！</p>
-            <p class="bt">文章</p>
-            <p class="subbt">KB210202 - 杯子(一)</p>
-<p class="subbt">一只郡主 作</p>
-<p class="text">   我叫杯子。我每天所做的工作便是把”水’’盛进我那瓷制蓝玉般的身体里,只是这样吗?不，在那些液体充斥我的体内之后,我还需要以最快的速度将它们送至主人身边，在最短的时间内完成最多的任务(比其他杯子都要多),这就是我的伟大之处。</p>
-<p class="text">   懂了吗?</p>
-<p class="text">   我每次都比其他杯子要遥遥领先,看到它们战战兢兢的缓慢前进,一摇一摆的跳跃简直像企鹅一样滑稽,每次从它们身边超越时我都忍不住发笑,像我这样的才能怎能湮没于此呢?</p>
-<p class="text">   “嘿!看那那个傻杯子,每次都像楞头一样往前冲,它容纳的水已经被它溢出浪费掉一多半了吧……”</p>
-<p class="text">   “这完全是在自欺欺人啊,总以为自己的速度总是比别的杯子要快而沾沾自喜，甚至认为以最快的速度解决掉问题便是胜利,这真是无稽之谈啊,太愚蠢了,这狂妄的瀑布所掩饰的一切最后终究会被主人检查时发现的。”</p>
-<p class="text">   尽管我有时总是听到像这样的淫语,但我知道这肯定是它们我成功的嫉妒。毕竟我的效率是最高的,我是没有错误的!</p>
-<p class="text">   难道我们存在意义不就是为了在竞争中取得第一吗?</p>
-            <p class="bt">技术性文档</p>
-            <p class="subbt">KB210201 - 新视频片头总结</p>
-            <p class="text">2021年夜猫工坊的第一篇博客，祝大家新年快乐，万事如意！</p>
-            <p class="text">本篇文章主要探讨夜猫工坊最新作品（截止到2021/2/5仍未发布）中片头所使用的技术总结。</p>
-            <p class="text">为了制作出高大上的效果，在片头中可以看到：</p>
-            <p class="text">该片头首先使用了linux的终端。不同于Windows的Powershell和cmd，Linux终端有用户名高亮显示，增强了高级感。</p>
-            <p class="text">其次，片头中使用了vim。vim是Linux下一个命令行编辑器。纯键盘操作使画面档次再次提升。</p>
-            <p class="text">此处特别使用了C++作为程序语言使用。目的是故意使程序代码变长，衬托高级感。</p>
-            <p class="text">保存后，笔者特地写了一个“compile.py”作为“编译器”使用。本质上，这个“compile.py”调用了笔者的Linux系统中的g++进行编译。</p>
-            <p class="text">为了使画面不单调，笔者特地做了一个进度条反映“编译进度”（假的）。</p>
-            <p class="text">最后，由于甲方的无理要求，笔者被迫重写了一个进度条，并用premiere pro剪辑处理成为最终片头。</p>
-			<p class="subbt">夜猫工坊目前掌握的技术清单：</p>
-			<p class="text">Premiere 简单剪辑</p>
-            <p class="text">After Effects 简单MG动画、特效制作</p>
-            <p class="text">Photoshop 简单修图</p>
-            <p class="text">Python 简单代码</p>
-            <p class="text">HTML + CSS 简单造网页</p>
-            <p class="text">Audition 简单音频处理</p>
-            <p class="text">Novel</p>
-            <p class="subbt">正在学习中的技术清单：</p>
-            <p class="text">Fl studio 简单编曲</p>
-            <p class="text">C++ 简单编程</p>
-            <p class="text">Linux</p>
-            <p class="text">高中知识</p>
-			<p class="text">漫画创作</p>
-            <p class="bt">其他</p>
-			<p class="text">欢迎在反馈指出错误</p>
-			<p class="space">&#8194;</p>
-			<p class="text" style="font-size:5px;">夜猫blog</p>
+	<div class="animation main" style="top: 100px;">
+		<p class="animation bt" align="center">夜猫工坊</p>
+		<p class="animation subbt">师语</p>
+		<p class="animation text">师语，由六中名师的弟子收集编纂而成。（目前还没有完全收集）</p>
+		<p class="animation subbt">七一班史</p>
+		<p class="animation text">子静者，巩县人士也，姓李，字建仁。</p>
+
+		<p class="animation text">静少时求学于青西，末学成升至六中。静日治学严明，所广学于数学。</p>
+
+		<p class="animation text">
+			择日，静于往似，治于数学。不料走神与同窗戏语，终被其师察觉，警曰:“建仁，为何笑而思无学也!”静接曰:“小生牙痛！”师曰:“牙疼就欲为罢?”静曰:“小生并非如此，人死应需哀之，牙疼应需抚之。”师怒曰:“汝胆敢尊师不敬，顶撞于此，何为也?”静愤然曰:“汝甚贱！汝何管我?”师闻后，张肩举手怒喝道:“老朽日教汝于经道，我何不能管束与你?汝不尊师便罢，何胆口出粗鄙之语?为师贱否?若是，日后不教你便罢！”后静于师争辩多时，学堂数生皆忍笑之。待时至正午，静被另一善师唤走，待至师殿内检讨数文。
+		</p>
+		<p class="animation text">夜猫帝国闻此事后惊叹曰:“建仁者，志士也。有上天入地之力， 与争斗猛虎山间。此次与师争斗，便是如此。虽其检讨之貌窘迫，但其争斗与学堂之貌，夺得世人赞叹。”</p>
+		</p>
+		<p class="animation subbt">七二班史</p>
+		<p class="animation text">帅洋者，巩县人士也，姓李，字天明。
+		</p>
+
+		<p class="animation text">帅洋少时求学于雷锋学堂，末学成升至六中。洋日贪图玩乐，不思学习。</p>
+
+		<p class="animation text">
+			一日晚，帅洋餐毕，遂入七二班与其狐朋狗友结伴玩乐。少时，其师携课时练等物进班督学。		</p>
+			<p class="animation text">
+				其师见帅洋仍坐后方与其友切切察察，怒斥曰：“天明，汝不知现为何时？”洋曰：“乃预备之时。”师曰：“预备之时即可为所欲为罢！”洋曰：“现时并非上课之时，何不可与众人谈话？”师曰：“大胆！预备之时即为上课之时！汝怎可与汝师顶嘴！”遂呼帅洋行至讲台边。洋曰：“吾不欲去也。”师怒曰：“放肆！汝竟敢不听为师之善言！”遂行至帅洋，以手拉其衣襟，欲将其强拽至讲台边。殊不知，帅洋宛如巨石般重，无法拉其也。而后，其师竟走离帅洋，开始讲题。		</p>
+				<p class="animation text">
+					放课后，师疾走至师殿内，呼其班主任。班主任得此情，至七二班呼出帅洋，并使其检讨数文。		</p>
+				<p class="animation text">夜猫帝国闻此事后惊叹曰:天明者，志士也。有上天入地之力， 争斗于猛虎山涧，此次与师争斗，便是如此。虽其检讨之貌窘迫，但其争斗与学堂之貌，夺得世人赞叹。		</p>
+		<p class="animation subbt">爱的馈赠</p>
+		<p class="animation text">她陪我走到教室门口，絮絮叨叨的说着些什么，我并没有在意，说完后她将手慢慢放在我的脸前，手里拿的是一张已经泛灰的卡片...我接过卡片后,心里不禁感到焦虑,还带着一丝丝的甜蜜。我走了，走出了教室门口, 她也跟着走了出来。我有时禁不住的回头看看她，只间她还是依旧笑的那么慈祥，在夕阳的余晖下,突然看到她的头发渐渐白了,觉得心里又多了一份不舍。她再次向我招手，意示要我快点赶路，在她招手的同时，我也不禁微笑而沉重的看着她，她依旧拿着那本旧的课时练,依旧笑的那么慈祥......走出校门之后,我拿出了她给我的那张泛灰了的卡片，上面的“十本课时练兑换券”几个字非常醒目，在夕阳的衬耀下,我哭了......
+		</p>
+		<p class="animation subbt">师语正文</p>
+		<p class="animation text">师曰：跟着好人学好人，跟着死婆子吓贾神。</p>
+			<p class="animation text">师曰：我是大学本科毕业，你们呢，连初中还没毕业。背不会唐诗三百首不要跟我说话。</p>
+			<p class="animation text">师曰：生活要有仪式感。你们应该像我一样，星期天我就和我的爱人，去朗读馆朗诵一首《再别康桥》。</p>
+			<p class="animation text">师曰：做人要有感恩之心，不想某些人，成天老师教着他，他就没一点那感恩之心昂。</p>
+			<p class="animation text">师曰：学习数学不能帮助你买菜，但是能决定你在哪买菜。你数学学好了你能在北京上海开着小汽车去买菜，数学没学好只能去集上买菜。</p>
+			<p class="animation text">师曰：我是个社会人，我成天很忙的。</p>
+			<p class="animation text">师曰：学习如种地，你坑（quo）地，地坑（quo）你。</p>
+			<p class="animation text">师曰：人家都坐着火车到郑州了，你还做着大巴在大峪沟！</p>
+			<p class="animation text">师曰：做题就要像锄禾日当午，不然你就会失去一大片森林！</p>
+			<p class="animation text">师曰：凡事不要带着你那花岗岩脑袋去见上帝！</p>
+			<p class="animation text">师曰：粘牙鸟屎舌牙臭，茅缸里捞出来的石头又臭又硬！</p>
+			<p class="animation text">师曰：吾与尔辈不是一个层次的人，等你背会80首古诗再和我说话！</p>
+			<p class="animation text">师曰：小花猫，真可笑，老师上课他睡觉，左耳朵进，右耳朵出，你说可笑不可笑！</p>
+			<p class="animation text">师曰：课时练都给我拿出来，你都做完了？</p>
+			<p class="animation text">师曰：我已经上了两节课了，腰都直不起来了，某些人还在下面不好好听，没一点那感恩之心！</p>
+			<p class="animation text">师曰：如果你不好用心治学，那么你以后就会像二化桥头的人一样！</p>
+			<p class="animation text">师曰：懒驴上磨屎尿多！</p>
+			<p class="animation text">师曰：跟着啥人xio啥人，跟着死婆子吓贾神！</p>
+		<p class="animation space">&ensp;</p> <!-- &#8194; 强行空格 -->
+		<p class="animation subbt">KB210202 - 杯子(一)</p>
+<p class="animation subbt">一只郡主 作</p>
+<p class="animation text">   我叫杯子。我每天所做的工作便是把”水’’盛进我那瓷制蓝玉般的身体里,只是这样吗?不，在那些液体充斥我的体内之后,我还需要以最快的速度将它们送至主人身边，在最短的时间内完成最多的任务(比其他杯子都要多),这就是我的伟大之处。</p>
+<p class="animation text">   懂了吗?</p>
+<p class="animation text">   我每次都比其他杯子要遥遥领先,看到它们战战兢兢的缓慢前进,一摇一摆的跳跃简直像企鹅一样滑稽,每次从它们身边超越时我都忍不住发笑,像我这样的才能怎能湮没于此呢?</p>
+<p class="animation text">   “嘿!看那那个傻杯子,每次都像楞头一样往前冲,它容纳的水已经被它溢出浪费掉一多半了吧……”</p>
+<p class="animation text">   “这完全是在自欺欺人啊,总以为自己的速度总是比别的杯子要快而沾沾自喜，甚至认为以最快的速度解决掉问题便是胜利,这真是无稽之谈啊,太愚蠢了,这狂妄的瀑布所掩饰的一切最后终究会被主人检查时发现的。”</p>
+<p class="animation text">   尽管我有时总是听到像这样的淫语,但我知道这肯定是它们我成功的嫉妒。毕竟我的效率是最高的,我是没有错误的!</p>
+<p class="animation text">   难道我们存在意义不就是为了在竞争中取得第一吗?</p>
+            <p class="animation subbt">技术性文档</p>
+			<p class="animation text"> None.</p>
+		<p class="animation text" style="position:relative;top:200px;font-size:12px">夜猫blog</p>
+		<p class="animation" style="position:relative;top:200px;">&ensp;</p>
 	</div>
-</div>
 
 </body>
+
 </html>
