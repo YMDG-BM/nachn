@@ -342,8 +342,7 @@ left: 10vw;
 top:70px;
 border-radius: 10px;
 background-color: rgba(173, 216, 210, 0.904);
-box-shadow:  5px 5px 10px #829998,
-             -5px 5px 10px #829998;
+
 }
 
 .text{
@@ -362,4 +361,11 @@ box-shadow:  5px 5px 10px #829998,
     top:15px;
     font-size:30px;
     color:#23756e
+    }
+    .bt{
+      position: relative;
+      font-size: 32px;
+      font-weight: bolder;
+      top:10px;
+      color: rgb(128, 151, 165);
     }
