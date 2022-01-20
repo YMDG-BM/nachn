@@ -16,7 +16,7 @@ body{
     font-size: 20px;
     left:.5vw}
     .touxiang1{
-      background-image: url('../ico/touxiang.jpg');
+      background-image: url('../ico/touxiang.png');
       width: 75px;
       height: 75px;
       border-radius: 50%;
@@ -36,7 +36,7 @@ body{
     }
   
     .touxiang1{
-      background-image: url('../ico/touxiang.jpg');
+      background-image: url('../ico/touxiang.png');
       width: 75px;
       height: 75px;
       border-radius: 50%;
@@ -98,7 +98,7 @@ body{
   
   .touxiang1{
     float:right;
-    background-image: url('../ico/touxiang.jpg');
+    background-image: url('../ico/touxiang.png');
     width: 10vw;
     height: 10vw;
     border-radius: 50%;
@@ -178,7 +178,7 @@ button:active {
   }
 
   .touxiang1{
-    background-image: url('../ico/touxiang.jpg');
+    background-image: url('../ico/touxiang.png');
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -232,7 +232,7 @@ button:active {
   }
   .touxiang1{
     float:right;
-    background-image: url('../ico/touxiang.jpg');
+    background-image: url('../ico/touxiang.png');
     width: 10vw;
     height: 10vw;
     border-radius: 50%;
