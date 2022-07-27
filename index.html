@@ -45,17 +45,15 @@
         bodyBgs[19] = "./photo/\\(20\\).jpg"
 
         var randomBgIndex = Math.round(Math.random() * 19);
-        document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ');\
-width:100%;\
-height:100%;\
-background-size:auto 150vh;\
-background-position:center 25%;\}</style>')
+        document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center fixed;\
+background-size:cover;\}</style>')
     </script>
 
 </head>
 
 <body>
-    <div class="animation bg">
+    <div class="container">
+    <div class="bg">
         <h1 class="animation" style="color:#d8d8d8;font-size: 56px;" align="center">NAC's Blog</h1>
         <div class="animation buttons">
             <div class="animation line1">
@@ -88,7 +86,8 @@ background-position:center 25%;\}</style>')
 
 
     </div>
-    <h6 style="margin-top:5vh" align="center">NAC STUDIO PRESENT,All rights reserved.</h6>
+</div>
+    <h6 align="center">NAC STUDIO PRESENT,All rights reserved.</h6>
 </body>
 
 </html>
