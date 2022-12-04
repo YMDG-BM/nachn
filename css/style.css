@@ -1,6 +1,7 @@
 body{
   margin:0;
   padding: 0;
+  filter: grayscale(90%);
 }
 .animation{
   transition: all 0.2s;
